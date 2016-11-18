@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-18 21:37:20 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.lcc.bean.Order" table="ORDER">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="orderNum" type="java.lang.String">
+            <column name="ORDERNUM" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="STATUS" />
+        </property>
+        <many-to-one name="user" class="com.lcc.bean.User" fetch="join">
+            <column name="USER" />
+        </many-to-one>
+        <property name="cost" type="java.lang.Double">
+            <column name="COST" />
+        </property>
+        <map name="items" table="ITEM" lazy="true">
+            <key>
+                <column name="ID" />
+            </key>
+            <map-key type="java.lang.Long"></map-key>
+            <one-to-many class="com.lcc.bean.Item" />
+        </map>
+    </class>
+</hibernate-mapping>
