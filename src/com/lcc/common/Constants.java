@@ -22,6 +22,7 @@ public class Constants {
 		case Constants.ORDER_STATUS_POST:
 			text = "ORDER_STATUS_POST";
 			break;
+			
 		case Constants.ORDER_STATUS_SEND:
 			text = "ORDER_STATUS_SEND";
 			break;
@@ -33,6 +34,7 @@ public class Constants {
 		case Constants.ORDER_STATUS_END:
 			text = "ORDER_STATUS_END";
 			break;
+			
 		default:
 			break;
 		}
