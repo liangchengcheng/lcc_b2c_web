@@ -16,7 +16,6 @@ public class UserDAOImpl extends BaseDAOImpl implements UserDAO{
 	@Override
 	public void save(User user) {
 		super.saveEntity(user);
-		
 	}
 
 }
