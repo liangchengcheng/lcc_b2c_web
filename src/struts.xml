@@ -19,6 +19,7 @@
 	<constant name="struts.multipart.saveDir" value="d:/test" />
 
 	<package name="from" namespace="/from" extends="struts-default">
+		
 		<action name="loginaction" class="loginAction">
 			<result name="user">
 				/cart.jsp
