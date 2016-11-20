@@ -12,7 +12,6 @@
 <title>我的购物车</title>
 </head>
 <body>
-
 	<H1 align=center>
 			你所购买的商品如下：
 		</H1>
@@ -32,6 +31,7 @@
 						合计
 					</TD>
 				</TR>
+				
 				<c:forEach var="item" items="${sessionScope.cart.items}">
 					<TR align=middle>
 						<TD height=30>
@@ -48,6 +48,7 @@
 						</TD>
 					</TR>
 				</c:forEach>
+				
 				<TR>
 					<TD colSpan=5 height=30>
 						您的购物车中所有商品总金额：${sessionScope.cart.price }

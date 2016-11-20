@@ -9,27 +9,8 @@
 <title>用户注册</title>
 </head>
 <body>
-
-<!-- private Long id; //主键   主键和manager主键问题
-	
-	private String name; //用户名
-	
-	private  int password; //密码
-	
-	private String address; //地址
-	
-	private String postCode; //邮编
-	
-	private String email; //email地址
-	
-	private String homePhone;// 家庭电话号码
-	
-	private String cellPhone; //手机号码
-	
-	private String officePhone; //办公室电话号码 -->
 	
 	<h1>用户注册</h1>
-	
 	
 	<form action="<%=context %>/from/user_register"  method="post">
 	
@@ -55,7 +36,6 @@
 	
 	</tr>
 	<tr>
-		
 		<td colspan="2" align="center">
 		
 		<input type="submit" value="注册">
@@ -65,10 +45,6 @@
 		</td>
 	
 	</table>
-
-
-
-
 	</form>	
 </body>
 </html>
