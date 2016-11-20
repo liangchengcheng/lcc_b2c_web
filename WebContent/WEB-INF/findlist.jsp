@@ -45,10 +45,7 @@
 						<!-- 配置server。xml  客户端使用相对地址 --> <img
 						src="<%=context %>/UploadImages/${p.imageSrc }"
 						style="height: 60px; width: 80px" />
-
-
 					</TD>
-
 					<TD><s:property value="#p.name" /> |</TD>
 					<TD><a
 						href="<%=context%>/from/addaction!addItem?type=1&productId=<s:property value="#p.id"/>">添加到购物车</a>
@@ -63,40 +60,25 @@
 	<BR>
 
 	<s:set name="page" value="#request['fpage']" />
-
 	<s:set name="maxpage" value="#request['fmaxpage']" />
 
 	<s:if test="#page==1">首页</s:if>
-
 	<s:if test="#page>1 ">
 		<a href="<%=context%>/from/find?page=1"> 首页</a>
 	</s:if>
-
 	<s:if test="#page == 1 ">上一页</s:if>
-
 	<s:if test="#page>1 ">
 		<a href="<%=context %>/from/find?page=${page-1}"> 上一页</a>
 	</s:if>
-
 	<s:if test="#page ==#maxpage">下一页</s:if>
-
 	<s:if test="#page< #maxpage ">
 		<a href="<%=context %>/from/find?page=${page + 1}"> 下一页</a>
 	</s:if>
-
 	<s:if test="#page == #maxpage">末页</s:if>
-
 	<s:if test="#page< #maxpage  ">
 		<a href="<%=context %>/from/find?page=${maxpage}">末页</a>
 	</s:if>
-
-
-
-
-
-
 	<BR>
-
 	<a href="<%=context%>/from/cart_inedx!CartIndex">查看购物车</a>&nbsp;&nbsp;
 	<a href="<%=context%>/from/order_index!index">结帐</a>&nbsp;&nbsp;
 	<a href="<%=context%>/from/listaction!list?page=1"> 返回首页</a>&nbsp;&nbsp;
@@ -106,6 +88,5 @@
 			<A href="OrderAction.do?method=index">结账</A>&nbsp;&nbsp;
 			<A href="login.jsp">登录</A> -->
 	</H1>
-
 </body>
 </html>
